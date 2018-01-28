@@ -1,0 +1,36 @@
+:root,
+.Theme--primary {
+  --foreground: #333745;
+  --background: #FFF;
+  --middleground: #7A7A7A;
+  --accent: #C7EFCF;
+  --highlight: #E63462;
+}
+
+.Theme--secondary {
+  --foreground: #333745;
+  --background: #EEF5DB;
+  --middleground: #333745;
+  --accent: #C7EFCF;
+  --highlight: #E53462;
+}
+
+.Theme--tertiary {
+  --foreground: #FFF;
+  --background: #333745;
+  --middleground: #EEF5DB;
+  --accent: #E63462;
+  --highlight: #C7EFCF;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
