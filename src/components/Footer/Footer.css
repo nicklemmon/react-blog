@@ -1,0 +1,5 @@
+.Footer {
+  padding: var(--container-padding);
+  color: var(--foreground);
+  background-color: var(--background);
+}

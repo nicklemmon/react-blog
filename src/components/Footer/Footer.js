@@ -3,16 +3,14 @@ import './Footer.css';
 
 class Footer extends Component {
   render() {
-    let classNames = 'Footer';
+    let classNames = 'Footer Theme--tertiary';
   
     if ( this.props.classNames ) {
       classNames += ` ${this.props.classNames}`;
     }
 
     return (
-      <footer className={ classNames }>
-        I'm a footer.
-      </footer>
+      <footer className={ classNames }></footer>
     );
   }
 }

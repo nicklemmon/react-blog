@@ -3,7 +3,7 @@ import './Header.css';
 
 class Header extends Component {
   render() {
-    let classNames = 'Header';
+    let classNames = 'Header Theme--tertiary';
 
     if ( this.props.classNames ) {
       classNames += ` ${this.props.classNames}`;

@@ -3,7 +3,7 @@ import './App.css';
 
 import Header from './components/Header/Header.js';
 import Sidebar from './components/Sidebar/Sidebar.js';
-import Post from './components/Post/Post.js';
+import Content from './components/Content/Content.js';
 import Footer from './components/Footer/Footer.js';
 
 class App extends Component {
@@ -14,9 +14,7 @@ class App extends Component {
 
         <Sidebar classNames="App-sidebar"></Sidebar>
 
-        <main className="App-main">
-          <Post></Post>
-        </main>
+        <Content classNames="App-main"></Content>
 
         <Footer classNames="App-footer"></Footer>
       </div>

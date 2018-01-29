@@ -1,0 +1,23 @@
+.Sidebar {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+.Sidebar a {
+  color: var(--highlight);
+}
+
+.Sidebar-list {
+  margin: 0;
+  padding: 0;
+}
+
+.Sidebar-listItem {
+  list-style: none;
+}
+
+.Sidebar-link {
+  text-decoration: none;
+  display: block;
+  padding: var(--spacing-sm);
+}
