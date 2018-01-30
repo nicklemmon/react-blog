@@ -11,7 +11,7 @@ class Content extends Component {
 
     return (
       <main className={ classNames }>
-        <h1 class='Content-heading'>This is the main heading</h1>
+        { this.props.children }
       </main>
     );
   }
