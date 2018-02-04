@@ -21,3 +21,7 @@
   display: block;
   padding: var(--spacing-md) var(--spacing-sm);
 }
+
+.Sidebar-link.is-active {
+  text-decoration: underline;
+}

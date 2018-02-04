@@ -14,15 +14,19 @@ class Sidebar extends Component {
       <nav className={ classNames }>
         <ul className='Sidebar-list'>
           <li className='Sidebar-listItem'>
-            <Link className="Sidebar-link" to="/something1">Something 1</Link>
+            <Link className='Sidebar-link' to="/">Home</Link>
           </li>
 
           <li className='Sidebar-listItem'>
-            <Link className="Sidebar-link" to="/something2">Something 2</Link>
+            <Link className="Sidebar-link" to="/post-1">Post 1</Link>
           </li>
 
           <li className='Sidebar-listItem'>
-            <Link className="Sidebar-link" to="/something3">Something 3</Link>
+            <Link className="Sidebar-link" to="/post-2">Post 2</Link>
+          </li>
+
+          <li className='Sidebar-listItem'>
+            <Link className="Sidebar-link" to="/post-3">Post 3</Link>
           </li>
         </ul>
       </nav>

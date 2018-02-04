@@ -7,9 +7,9 @@ import Sidebar from '../Sidebar/Sidebar.js';
 import Content from '../Content/Content.js';
 import Footer from '../Footer/Footer.js';
 
-import Something1 from '../../posts/Something1.js';
-import Something2 from '../../posts/Something2.js';
-import Something3 from '../../posts/Something3.js';
+import Post1 from '../../posts/Post1.js';
+import Post2 from '../../posts/Post2.js';
+import Post3 from '../../posts/Post3.js';
 
 class Layout extends Component {
   render() {
@@ -22,11 +22,11 @@ class Layout extends Component {
         <Content classNames="Layout-main">
           { this.props.children }
 
-          <Route path='/something1' component={ Something1 }></Route>
+          <Route path='/post-1' component={ Post1 }></Route>
 
-          <Route path='/something2' component={ Something2 }></Route>
+          <Route path='/post-2' component={ Post2 }></Route>
 
-          <Route path='/something3' component={ Something3 }></Route>
+          <Route path='/post-3' component={ Post3 }></Route>
         </Content>
 
         <Footer classNames="Layout-footer"></Footer>

@@ -1,17 +1,26 @@
 import React, { Component } from 'react';
-import './Post.css';
 
 class Post extends Component {
-  render() {
-    let classNames = 'Post';
-  
-    if ( this.props.classNames ) {
-      classNames += ` ${this.props.classNames}`;
-    }
+  focusTitle() {
+    this.title.focus()
+  }
 
+  componentDidMount() {
+    setTimeout( () => this.focusTitle(), 500 ) // focus delay helps with screen reader read/render delay
+  }
+
+  render() {
     return (
-      <article className={ classNames }>
-        Post post post post post.
+      <article>
+        {/* negative `tabindex` for focusing purposes */}
+        <h1
+          ref={ ( title ) => { this.title = title; } }
+          tabIndex="-1"
+        >
+          { this.props.title }
+        </h1>
+
+        { this.props.children }
       </article>
     );
   }
