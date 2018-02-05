@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import './Post.css';
+
+import PostHeader from './PostHeader.js';
 
 class Post extends Component {
   focusTitle() {
@@ -10,15 +13,25 @@ class Post extends Component {
   }
 
   render() {
+    const title = this.props.title
+    const author = this.props.author
+    const date = this.props.date
+
     return (
-      <article>
+      <article className='Post'>
         {/* negative `tabindex` for focusing purposes */}
         <h1
+          className='Post-title'
           ref={ ( title ) => { this.title = title; } }
           tabIndex="-1"
         >
-          { this.props.title }
+          { title }
         </h1>
+
+        <PostHeader 
+          author={ author } 
+          date={ date }
+        />
 
         { this.props.children }
       </article>

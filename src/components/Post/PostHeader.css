@@ -1,0 +1,29 @@
+.PostHeader {
+  color: var(--foreground);
+  background: var(--background);
+  border-bottom: 2px solid var(--middleground);
+  padding: var(--container-padding);
+}
+
+.PostHeader-avatar {
+  border-radius: 50%;
+  object-fit: cover;
+  border: var(--spacing-xs) solid var(--middleground);
+  height: var(--spacing-xl);
+  width: var(--spacing-xl);
+  margin-bottom: var(--spacing-sm);
+}
+
+.PostHeader-author {
+  font-size: 1rem;
+  margin-bottom: var(--spacing-sm);
+}
+
+.PostHeader-date {
+  display: inline-block;
+  font-size: 0.85rem;
+  padding: var(--spacing-xs) var(--spacing-sm);;
+  background: var(--highlight);
+  color: #fff;
+  font-weight: 700;
+}

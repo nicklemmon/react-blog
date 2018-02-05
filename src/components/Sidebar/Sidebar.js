@@ -4,7 +4,7 @@ import './Sidebar.css';
 
 class Sidebar extends Component {
   render() {
-    let classNames = 'Sidebar Theme--secondary';
+    let classNames = 'Sidebar Theme--tertiary';
   
     if ( this.props.classNames ) {
       classNames += ` ${this.props.classNames}`;
@@ -12,11 +12,9 @@ class Sidebar extends Component {
 
     return (
       <nav className={ classNames }>
-        <ul className='Sidebar-list'>
-          <li className='Sidebar-listItem'>
-            <Link className='Sidebar-link' to="/">Home</Link>
-          </li>
+        <div className='Sidebar-header'>Posts</div>
 
+        <ul className='Sidebar-list'>
           <li className='Sidebar-listItem'>
             <Link className="Sidebar-link" to="/post-1">Post 1</Link>
           </li>

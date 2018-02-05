@@ -3,8 +3,13 @@
   color: var(--foreground);
 }
 
+.Sidebar-header {
+  padding: var(--container-padding);
+  font-weight: 700;
+}
+
 .Sidebar a {
-  color: var(--highlight);
+  color: var(--accent);
 }
 
 .Sidebar-list {

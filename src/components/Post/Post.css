@@ -1,0 +1,7 @@
+.Post-title {
+  margin-bottom: var(--spacing-md);
+}
+
+.Post-prose > * + * { /* used for longform text */
+  margin-top: var(--spacing-md);
+}
