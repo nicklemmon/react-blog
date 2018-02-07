@@ -1,15 +1,43 @@
 import React, { Component } from 'react';
+import ReactMarkdown from 'react-markdown';
 
 import Post from '../components/Post/Post.js';
+
+const title = 'Post 1';
+const author = 'Bill Murray';
+const date = '01/03/2017';
+const content = `
+## Live demo
+
+Changes are automatically rendered as you type.
+
+* Implements [GitHub Flavored Markdown](https://github.github.com/gfm/)
+* Renders actual, "native" React DOM elements
+* Allows you to escape or skip HTML (try toggling the checkboxes above)
+* If you escape or skip the HTML, no \`dangerouslySetInnerHTML\` is used! Yay!
+
+## HTML block below
+
+<blockquote>
+  This blockquote will change based on the HTML settings above.
+</blockquote>
+`
 
 class Post1 extends Component {
   render() {
     return (
-      <Post 
-        title="Post 1!"
-        author="Bill Murray"
-        date="12/04/17"
-      />
+      <React.Fragment>
+        <Post 
+          title={ title }
+          author={ author }
+          date={ date }
+        >
+          <ReactMarkdown 
+            htmlMode='raw'
+            source={ content }
+          />
+        </Post>
+      </React.Fragment>
     )
   }
 }
