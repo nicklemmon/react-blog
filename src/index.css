@@ -12,6 +12,8 @@
   --breakpoing-lg: 991px;
   --breakpoint-xl: 1199px;
   --container-padding: var(--spacing-md) var(--spacing-sm);
+  --shadow-sm: 0 var(--spacing-xs) var(--spacing-sm) rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 var(--spacing-sm) var(--spacing-md) rgba(0, 0, 0, 0.1);
 }
 
 /* small */
@@ -33,7 +35,7 @@
 .Theme--primary {
   --foreground:   #333745;
   --background:   #FFF;
-  --middleground: #7A7A7A;
+  --middleground: #CCC;
   --accent:       #C7EFCF;
   --highlight:    #E63462;
 }
@@ -41,7 +43,7 @@
 .Theme--secondary {
   --foreground:   #333745;
   --background:   #EEF5DB;
-  --middleground: #333745;
+  --middleground: #829C87;
   --accent:       #C7EFCF;
   --highlight:    #E53462;
 }
@@ -49,7 +51,7 @@
 .Theme--tertiary {
   --foreground:   #FFF;
   --background:   #333745;
-  --middleground: #EEF5DB;
+  --middleground: #4F556B;
   --accent:       #E63462;
   --highlight:    #C7EFCF;
 }

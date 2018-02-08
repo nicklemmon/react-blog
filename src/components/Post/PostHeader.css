@@ -1,9 +1,11 @@
 .PostHeader {
   color: var(--foreground);
   background: var(--background);
-  border-bottom: 2px solid var(--middleground);
+  border: 1px solid var(--middleground);
+  border-bottom: var(--spacing-sm) solid var(--middleground);
   padding: var(--container-padding);
   margin-bottom: var(--spacing-md);
+  box-shadow: var(--shadow-sm);
 }
 
 .PostHeader-avatar {
