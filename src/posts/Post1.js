@@ -4,6 +4,7 @@ import ReactMarkdown from 'react-markdown';
 import Post from '../components/Post/Post.js';
 
 const title = 'Post 1';
+const subtitle = 'Lorem ipsum dolor sit amet.';
 const author = 'Bill Murray';
 const date = '01/03/2017';
 const content = `
@@ -41,6 +42,7 @@ class Post1 extends Component {
       <React.Fragment>
         <Post 
           title={ title }
+          subtitle={ subtitle }
           author={ author }
           date={ date }
         >

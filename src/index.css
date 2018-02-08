@@ -14,12 +14,14 @@
   --container-padding: var(--spacing-md) var(--spacing-sm);
   --shadow-sm: 0 var(--spacing-xs) var(--spacing-sm) rgba(0, 0, 0, 0.1);
   --shadow-lg: 0 var(--spacing-sm) var(--spacing-md) rgba(0, 0, 0, 0.1);
+  --gutter: 0.5rem;
 }
 
 /* small */
 @media (min-width: 575px) {
   :root {
     --base-font-size: 18px;
+    --gutter: var(--spacing-md);
   }
 }
 
@@ -28,6 +30,7 @@
   :root {
     --base-font-size: 20px;
     --container-padding: var(--spacing-lg) var(--spacing-md);
+    --gutter: var(--spacing-lg);
   }
 }
 
@@ -43,7 +46,7 @@
 .Theme--secondary {
   --foreground:   #333745;
   --background:   #EEF5DB;
-  --middleground: #829C87;
+  --middleground: #A5C9AC;
   --accent:       #C7EFCF;
   --highlight:    #E53462;
 }

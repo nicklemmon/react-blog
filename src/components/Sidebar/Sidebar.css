@@ -7,6 +7,7 @@
   padding: var(--container-padding);
   font-weight: 700;
   border-bottom: 2px solid var(--middleground);
+  box-shadow: var(--shadow-sm);
 }
 
 .Sidebar a {

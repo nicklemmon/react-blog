@@ -14,7 +14,7 @@ class Header extends Component {
     return (
       <header className={ classNames }>
         <div className='Header-brand'>
-          <Link className='Header-link' to="/">Citrus Blog</Link>
+          <Link className='Header-link' to="/">Platform Title</Link>
         </div>
       </header>
     );

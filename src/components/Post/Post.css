@@ -1,5 +1,6 @@
 .Post {
-  padding: var(--container-padding);
+  padding-right: 1vw;
+  padding-left: 1vw;
 }
 
 .Post-prose * + * { /* used for longform text */

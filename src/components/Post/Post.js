@@ -6,6 +6,7 @@ import PostHeader from './PostHeader.js';
 class Post extends Component {
   render() {
     const title = this.props.title
+    const subtitle = this.props.subtitle
     const author = this.props.author
     const date = this.props.date
 
@@ -13,6 +14,7 @@ class Post extends Component {
       <article className='Post'>
         <PostHeader 
           title={ title }
+          subtitle={ subtitle }
           author={ author } 
           date={ date }
         />

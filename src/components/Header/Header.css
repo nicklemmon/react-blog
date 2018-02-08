@@ -1,11 +1,16 @@
 .Header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: var(--container-padding);
   color: var(--foreground);
   background: var(--background);
   box-shadow: var(--shadow-sm);
 }
 
-.Header-brand {
+.Header-link {
+  color: var(--highlight);
   font-weight: 700;
-  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
 }
