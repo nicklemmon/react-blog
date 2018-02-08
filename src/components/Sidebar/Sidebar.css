@@ -6,6 +6,7 @@
 .Sidebar-header {
   padding: var(--container-padding);
   font-weight: 700;
+  border-bottom: 2px solid var(--middleground);
 }
 
 .Sidebar a {
@@ -24,9 +25,10 @@
 .Sidebar-link {
   text-decoration: none;
   display: block;
-  padding: var(--spacing-md) var(--spacing-sm);
+  padding: var(--spacing-md);
 }
 
 .Sidebar-link.is-active {
-  text-decoration: underline;
+  background: var(--accent);
+  color: #fff;
 }

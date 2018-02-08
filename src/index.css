@@ -61,6 +61,12 @@
 }
 
 *:focus {
+  outline: none;
+}
+
+[tabindex="0"]:focus,
+[href]:focus,
+button:focus {
   outline: 1px dashed currentColor;
 }
 
@@ -87,4 +93,31 @@ h4,
 h5,
 h6 {
   margin: 0;
+}
+
+h1 {
+  font-size: 3.815rem;
+}
+
+h2 {
+  font-size: 3.052rem;
+}
+
+h3 {
+  font-size: 2.441rem;
+  padding-bottom: var(--spacing-sm);
+  border-bottom: 2px solid var(--middleground);
+}
+
+h4 {
+  font-size: 1.953rem;
+}
+
+h5 {
+  font-size: 1.563rem;
+}
+
+h6 {
+  font-size: 1.25rem;
+  text-transform: uppercase;
 }

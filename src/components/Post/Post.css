@@ -2,6 +2,14 @@
   margin-bottom: var(--spacing-md);
 }
 
-.Post-prose > * + * { /* used for longform text */
+.Post-prose * + * { /* used for longform text */
   margin-top: var(--spacing-md);
+}
+
+.Post-prose * + h2,
+.Post-prose * + h3,
+.Post-prose * + h4,
+.Post-prose * + h5,
+.Post-prose * + h6 {
+  margin-top: var(--spacing-lg);
 }

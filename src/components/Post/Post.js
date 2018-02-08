@@ -33,7 +33,9 @@ class Post extends Component {
           date={ date }
         />
 
-        { this.props.children }
+        <div className="Post-prose">
+          { this.props.children }
+        </div>
       </article>
     );
   }

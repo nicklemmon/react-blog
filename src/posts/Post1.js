@@ -21,6 +21,18 @@ Changes are automatically rendered as you type.
 <blockquote>
   This blockquote will change based on the HTML settings above.
 </blockquote>
+
+# Heading 1
+
+## Heading 2
+
+### Heading 3
+
+#### Heading 4
+
+##### Heading 5
+
+###### Heading 6
 `
 
 class Post1 extends Component {
