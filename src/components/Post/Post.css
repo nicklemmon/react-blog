@@ -1,6 +1,5 @@
-.Post {
-  padding-right: 1vw;
-  padding-left: 1vw;
+.Post-prose {
+  max-width: var(--breakpoint-md);
 }
 
 .Post-prose * + * { /* used for longform text */

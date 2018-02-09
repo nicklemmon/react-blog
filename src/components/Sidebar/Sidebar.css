@@ -5,13 +5,10 @@
 
 .Sidebar-header {
   padding: var(--container-padding);
+  padding-left: var(--spacing-md);
   font-weight: 700;
   border-bottom: 2px solid var(--middleground);
   box-shadow: var(--shadow-sm);
-}
-
-.Sidebar a {
-  color: var(--accent);
 }
 
 .Sidebar-list {
@@ -24,9 +21,29 @@
 }
 
 .Sidebar-link {
+  color: var(--accent);
   text-decoration: none;
   display: block;
-  padding: var(--spacing-md);
+  position: relative; /* allows absolute positioning within */
+  margin: var(--spacing-md);
+  padding: var(--spacing-md) var(--spacing-sm);
+  border-radius: var(--border-radius);
+  transition: background-color 1s var(--animation-easing),
+              color var(--animation-timing) var(--animation-easing),
+              box-shadow 0.33s var(--animation-easing),
+              transform 0.33s var(--animation-easing);
+}
+
+.Sidebar-link:hover,
+.Sidebar-link:focus {
+  color: #fff;
+  /* background-color: var(--accent); */
+  transform: scale(1.025);
+  box-shadow: 0 0 var(--spacing-xl) rgba(0, 0, 0, 0.25);
+}
+
+.Sidebar-link:focus {
+  outline: 0;
 }
 
 .Sidebar-link.is-active {

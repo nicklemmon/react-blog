@@ -42,7 +42,7 @@ class PostHeader extends Component {
 
           <div className='PostHeader-metaGroup'>
             <div className='PostHeader-author'>
-              by { author }
+              <em>by</em> <strong>{ author }</strong>
             </div>
 
             <div className='PostHeader-date'>

@@ -5,7 +5,6 @@
   grid-gap: var(--gutter);
   color: var(--foreground);
   background: var(--background);
-  border: 2px solid var(--middleground);
   padding: var(--container-padding);
   margin-bottom: var(--spacing-md);
   box-shadow: var(--shadow-lg);
@@ -49,6 +48,7 @@
   padding: var(--spacing-xs) var(--spacing-sm);;
   background: var(--highlight);
   color: #fff;
+  border-radius: var(--border-radius);
   font-weight: 700;
 }
 
