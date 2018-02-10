@@ -28,25 +28,25 @@
   margin: var(--spacing-md);
   padding: var(--spacing-md) var(--spacing-sm);
   border-radius: var(--border-radius);
-  transition: background-color 1s var(--animation-easing),
+  transition: background-color var(--animation-timing) var(--animation-easing),
               color var(--animation-timing) var(--animation-easing),
               box-shadow 0.33s var(--animation-easing),
               transform 0.33s var(--animation-easing);
 }
 
 .Sidebar-link:hover,
-.Sidebar-link:focus {
+.Sidebar-link:focus,
+.Sidebar-link.is-active {
   color: #fff;
   /* background-color: var(--accent); */
   transform: scale(1.025);
   box-shadow: 0 0 var(--spacing-xl) rgba(0, 0, 0, 0.25);
 }
 
-.Sidebar-link:focus {
-  outline: 0;
+.Sidebar-link.is-active {
+  background-color: var(--accent);
 }
 
-.Sidebar-link.is-active {
-  background: var(--accent);
-  color: #fff;
+.Sidebar-link:focus {
+  outline: 0;
 }
