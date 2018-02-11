@@ -38,9 +38,8 @@
 .Sidebar-link:focus,
 .Sidebar-link.is-active {
   color: #fff;
-  /* background-color: var(--accent); */
   transform: scale(1.025);
-  box-shadow: 0 0 var(--spacing-xl) rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 var(--spacing-xl) rgba(0, 0, 0, 0.33);
 }
 
 .Sidebar-link.is-active {

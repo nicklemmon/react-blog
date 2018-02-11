@@ -5,7 +5,9 @@ import PostHeader from './PostHeader.js';
 
 class Post extends Component {
   render() {
-    const title = this.props.title
+    const match = this.props.match
+    const params = match.params
+    const title = params.title
     const subtitle = this.props.subtitle
     const author = this.props.author
     const date = this.props.date
