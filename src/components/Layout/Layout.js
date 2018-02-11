@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
 import './Layout.css';
 
-import Header from '../Header/Header.js';
-import Sidebar from '../Sidebar/Sidebar.js';
-import Content from '../Content/Content.js';
-import Footer from '../Footer/Footer.js';
-import Post from '../Post/Post.js';
+import Header from './Header/Header.js';
+import Sidebar from './Sidebar/Sidebar.js';
+import Content from './Content/Content.js';
+import Footer from './Footer/Footer.js';
+import Post from './Post/Post.js';
 
 class Layout extends Component {
   render() {
