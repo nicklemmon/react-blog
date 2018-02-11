@@ -21,7 +21,7 @@ class Sidebar extends Component {
             <NavLink 
               activeClassName={ activeClassName } 
               className="Sidebar-link" 
-              to="/posts/post-1"
+              to="/posts/post01"
             >
               Post 1
             </NavLink>
@@ -31,7 +31,7 @@ class Sidebar extends Component {
             <NavLink 
               activeClassName={ activeClassName } 
               className="Sidebar-link" 
-              to="/posts/post-2"
+              to="/posts/post02"
             >
               Post 2
             </NavLink>
@@ -41,7 +41,7 @@ class Sidebar extends Component {
             <NavLink 
               activeClassName={ activeClassName } 
               className="Sidebar-link" 
-              to="/posts/post-3"
+              to="/posts/post03"
             >
               Post 3
             </NavLink>
