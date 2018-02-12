@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import ReactMarkdown from 'react-markdown';
+
 import './Post.css';
 
 import PostHeader from './PostHeader.js';
@@ -26,7 +28,7 @@ class Post extends Component {
         />
 
         <div className="Post-prose">
-          { content }
+          <ReactMarkdown source={ content } />
         </div>
       </article>
     );
