@@ -19,7 +19,7 @@ class Layout extends Component {
         <Content classNames="Layout-main">
           { this.props.children }
 
-          <Route path='/posts/:post' component={ Post }></Route>
+          <Route path='/posts/:postId' component={ Post }></Route>
         </Content>
 
         <Footer classNames="Layout-footer"></Footer>

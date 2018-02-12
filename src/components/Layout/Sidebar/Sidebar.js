@@ -2,9 +2,22 @@ import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import './Sidebar.css';
 
+import posts from '../Post/posts.js';
+
 class Sidebar extends Component {
   render() {
     const activeClassName = 'is-active';
+    const listItems = posts.map( item =>
+      <li className='Sidebar-listItem' key={ item.id }>
+        <NavLink 
+          activeClassName={ activeClassName } 
+          className='Sidebar-link' 
+          to={ '/posts/' + item.id }
+        >
+          { item.title }
+        </NavLink>
+      </li>
+    )
 
     let classNames = 'Sidebar Theme--tertiary';
   
@@ -17,35 +30,7 @@ class Sidebar extends Component {
         <div className='Sidebar-header'>Posts</div>
 
         <ul className='Sidebar-list'>
-          <li className='Sidebar-listItem'>
-            <NavLink 
-              activeClassName={ activeClassName } 
-              className="Sidebar-link" 
-              to="/posts/post01"
-            >
-              Post 1
-            </NavLink>
-          </li>
-
-          <li className='Sidebar-listItem'>
-            <NavLink 
-              activeClassName={ activeClassName } 
-              className="Sidebar-link" 
-              to="/posts/post02"
-            >
-              Post 2
-            </NavLink>
-          </li>
-
-          <li className='Sidebar-listItem'>
-            <NavLink 
-              activeClassName={ activeClassName } 
-              className="Sidebar-link" 
-              to="/posts/post03"
-            >
-              Post 3
-            </NavLink>
-          </li>
+          { listItems }
         </ul>
       </nav>
     );

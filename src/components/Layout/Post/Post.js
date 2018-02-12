@@ -2,43 +2,19 @@ import React, { Component } from 'react';
 import './Post.css';
 
 import PostHeader from './PostHeader.js';
+import posts from './posts.js';
 
 class Post extends Component {
   render() {
-    const posts = {
-      post01: {
-        title: "This is a post",
-        subtitle: "And here is a subtitle",
-        author: "Bill Murray",
-        date: "02/11/2018",
-        content: "Herro."
-      },
-      post02: {
-        title: "This is post 2",
-        subtitle: "This is a subtitle",
-        author: "Bill Murray",
-        date: "02/09/2018",
-        content: "Herro again."
-      },
-      post03: {
-        title: "This is post 3",
-        subtitle: "The best of posts",
-        author: "Bill Murray",
-        date: "02/07/2018",
-        content: "Hey there."
-      }
-    }
-
-    const match = this.props.match
-    const params = match.params
-    const post = params.post
-    const PostObject = posts[post]
-
-    const title = PostObject.title
-    const subtitle = PostObject.subtitle
-    const author = PostObject.author
-    const date = PostObject.date
-    const content = PostObject.content
+    const match = this.props.match;
+    const params = match.params;
+    const postId = params.postId;
+    const PostObj = posts.find( ( post ) => post.id === postId ); // post data from imported Posts object
+    const title = PostObj.title;
+    const subtitle = PostObj.subtitle;
+    const author = PostObj.author;
+    const date = PostObj.date;
+    const content = PostObj.content;
 
     return (
       <article className='Post'>
