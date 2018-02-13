@@ -18,6 +18,21 @@ class Post extends Component {
     const date = PostObj.date;
     const content = PostObj.content;
 
+    const formatMarkdown = ( markdownStr ) => {
+      const str = markdownStr;
+      const lines = str.split( '\n' );
+
+      for( var i = 0; i < lines.length; i++) {
+        lines[i] = `\n${lines[i]}`;
+      }
+
+      console.log( lines.join('\n') );
+
+      return lines.join('\n');
+    }
+
+    const formattedContent = formatMarkdown( content );
+
     return (
       <article className='Post'>
         <PostHeader 
@@ -28,7 +43,7 @@ class Post extends Component {
         />
 
         <div className="Post-prose">
-          <ReactMarkdown source={ content } />
+          <ReactMarkdown source={ formattedContent } />
         </div>
       </article>
     );

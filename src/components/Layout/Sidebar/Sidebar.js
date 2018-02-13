@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
+import MdInsertDriveFile from 'react-icons/lib/md/insert-drive-file';
+
 import './Sidebar.css';
 
 import posts from '../Post/posts.js';
@@ -17,8 +19,8 @@ class Sidebar extends Component {
           { item.title }
         </NavLink>
       </li>
-    )
-
+    );
+    const headerContent = 'Posts';
     let classNames = 'Sidebar Theme--tertiary';
   
     if ( this.props.classNames ) {
@@ -27,7 +29,11 @@ class Sidebar extends Component {
 
     return (
       <nav className={ classNames }>
-        <div className='Sidebar-header'>Posts</div>
+        <div className='Sidebar-header'>
+          <MdInsertDriveFile className='Sidebar-headerIcon'/>
+
+          { headerContent }
+        </div>
 
         <ul className='Sidebar-list'>
           { listItems }

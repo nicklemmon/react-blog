@@ -5,7 +5,10 @@ const posts = [
     subtitle: 'And here is a subtitle',
     author: 'Bill Murray',
     date: '02/11/2018',
-    content: `## Herro.`
+    content:
+  `## Herro.
+  A paragraph
+  ### Heading 3`
   },
   {
     id: 'post-02',
@@ -18,7 +21,7 @@ const posts = [
   {
     id: 'post-03',
     title: 'This is post 3',
-    subtitle: 'The best of p',
+    subtitle: 'The best of all of the posts',
     author: 'Bill Murray',
     date: '02/07/2018',
     content: 'Hey there.'

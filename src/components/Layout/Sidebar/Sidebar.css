@@ -1,14 +1,21 @@
 .Sidebar {
   background: var(--background);
   color: var(--foreground);
+  overflow-x: hidden;
 }
 
 .Sidebar-header {
+  display: flex;
+  align-items: center;
   padding: var(--container-padding);
   padding-left: var(--spacing-md);
   font-weight: 700;
-  border-bottom: 2px solid var(--middleground);
-  box-shadow: var(--shadow-sm);
+  box-shadow: var(--shadow-lg);
+  line-height: 1;
+}
+
+.Sidebar-headerIcon {
+  margin-right: var(--spacing-sm);
 }
 
 .Sidebar-list {
@@ -25,9 +32,7 @@
   text-decoration: none;
   display: block;
   position: relative; /* allows absolute positioning within */
-  margin: var(--spacing-md);
-  padding: var(--spacing-md) var(--spacing-sm);
-  border-radius: var(--border-radius);
+  padding: var(--spacing-lg) var(--spacing-md);
   transition: background-color var(--animation-timing) var(--animation-easing),
               color var(--animation-timing) var(--animation-easing),
               box-shadow 0.33s var(--animation-easing),
@@ -39,7 +44,7 @@
 .Sidebar-link.is-active {
   color: #fff;
   transform: scale(1.025);
-  box-shadow: 0 0 var(--spacing-xl) rgba(0, 0, 0, 0.33);
+  box-shadow: 0 var(--spacing-md) var(--spacing-lg) rgba(0, 0, 0, 0.25);
 }
 
 .Sidebar-link.is-active {
