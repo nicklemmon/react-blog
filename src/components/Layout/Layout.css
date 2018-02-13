@@ -21,3 +21,16 @@
 .Layout-footer {
   grid-column: 2;
 }
+
+@media screen and (max-width: 575px) {
+  .Layout {
+    grid-template-columns: 100%;
+  }
+  
+  .Layout-header,
+  .Layout-main,
+  .Layout-sidebar,
+  .Layout-footer {
+    grid-column: 1 / span 2;
+  }
+}
