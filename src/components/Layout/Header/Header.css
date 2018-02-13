@@ -5,7 +5,7 @@
   padding: var(--container-padding);
   color: var(--foreground);
   background: var(--background);
-  box-shadow: var(--shadow-sm);
+  box-shadow: var(--shadow-lg);
 }
 
 .Header-link {

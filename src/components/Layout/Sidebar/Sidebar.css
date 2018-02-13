@@ -32,8 +32,11 @@
   text-decoration: none;
   display: block;
   position: relative; /* allows absolute positioning within */
-  padding: var(--spacing-lg) var(--spacing-md);
+  padding: var(--spacing-md);
+  background-color: var(--background);
+  border-top: 1px solid var(--middleground);
   transition: background-color var(--animation-timing) var(--animation-easing),
+              border-color var(--animation-timing) var(--animation-easing),
               color var(--animation-timing) var(--animation-easing),
               box-shadow 0.33s var(--animation-easing),
               transform 0.33s var(--animation-easing);
@@ -48,6 +51,7 @@
 }
 
 .Sidebar-link.is-active {
+  border-color: var(--accent);
   background-color: var(--accent);
 }
 
