@@ -26,8 +26,6 @@ class Post extends Component {
         lines[i] = `\n${lines[i]}`;
       }
 
-      console.log( lines.join('\n') );
-
       return lines.join('\n');
     }
 

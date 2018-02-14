@@ -1,14 +1,28 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
-import MdInsertDriveFile from 'react-icons/lib/md/insert-drive-file';
+import MdChevronRight from 'react-icons/lib/md/chevron-right';
 
 import './Sidebar.css';
 
 import posts from '../Post/posts.js';
 
 class Sidebar extends Component {
+  constructor( props ) {
+    super( props );
+
+    this.toggleNav = this.toggleNav.bind( this );
+
+    this.state = { isExpanded: false }
+  }
+
+  toggleNav() {
+    this.setState( { isExpanded: !this.state.isExpanded } )
+  }
+
   render() {
     const activeClassName = 'is-active';
+    const headerContent = 'Posts';
+    const isExpanded = this.state.isExpanded;
     const listItems = posts.map( item =>
       <li className='Sidebar-listItem' key={ item.id }>
         <NavLink 
@@ -20,22 +34,18 @@ class Sidebar extends Component {
         </NavLink>
       </li>
     );
-    const headerContent = 'Posts';
-    let classNames = 'Sidebar Theme--tertiary';
-  
-    if ( this.props.classNames ) {
-      classNames += ` ${this.props.classNames}`;
-    }
 
     return (
-      <nav className={ classNames }>
+      <nav className={ 'Sidebar Theme--tertiary ' + ( isExpanded ? 'is-expanded' : 'is-collapsed' ) }>
         <div className='Sidebar-header'>
-          <MdInsertDriveFile className='Sidebar-headerIcon'/>
-
           { headerContent }
+
+          <button onClick={ this.toggleNav } className={ 'Sidebar-button ' + ( isExpanded ? 'is-expanded' : 'is-collapsed' ) } aria-label='toggle navigation' aria-controls='navigation' aria-expanded={ isExpanded }>
+            <MdChevronRight className='Sidebar-chevronIcon'/>
+          </button>
         </div>
 
-        <ul className='Sidebar-list'>
+        <ul className='Sidebar-list' id='navigation'>
           { listItems }
         </ul>
       </nav>

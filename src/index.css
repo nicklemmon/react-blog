@@ -1,17 +1,17 @@
 :root {
   --base-font-size: 16px;
-  --spacing-xxs:   0.125rem;
-  --spacing-xs:    0.25rem;
-  --spacing-sm:    0.5rem;
-  --spacing-md:    1rem;
-  --spacing-lg:    2rem;
-  --spacing-xl:    4rem;
-  --spacing-xxl:   8rem;
+  --spacing-xxs: 0.125rem;
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 4rem;
+  --spacing-xxl: 8rem;
   --breakpoint-sm: 575px;
   --breakpoint-md: 768px;
   --breakpoing-lg: 991px;
   --breakpoint-xl: 1199px;
-  --container-padding: var(--spacing-md) var(--spacing-sm);
+  --container-padding: var(--spacing-lg) var(--spacing-md);
   --shadow-sm: 0 var(--spacing-xs) var(--spacing-sm) -0.33rem rgba(0, 0, 0, 0.125);
   --shadow-lg: 0 var(--spacing-sm) var(--spacing-md) -0.33rem rgba(0, 0, 0, 0.125);
   --gutter: 0.5rem;
@@ -23,17 +23,14 @@
 /* small */
 @media (min-width: 575px) {
   :root {
-    --base-font-size: 18px;
+    --base-font-size: calc(16px + 0.5vw);
     --gutter: var(--spacing-md);
   }
 }
 
-/* medium */
-@media (min-width: 768px) {
+@media (min-width: 1199px) {
   :root {
-    --base-font-size: 20px;
-    --container-padding: var(--spacing-lg);
-    --gutter: var(--spacing-lg);
+    --base-font-size: 22px;
   }
 }
 

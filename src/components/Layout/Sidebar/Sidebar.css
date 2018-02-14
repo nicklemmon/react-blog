@@ -7,15 +7,39 @@
 .Sidebar-header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: var(--container-padding);
   padding-left: var(--spacing-md);
   font-weight: 700;
+  border-bottom: 2px solid var(--middleground);
   box-shadow: var(--shadow-lg);
-  line-height: 1;
 }
 
-.Sidebar-headerIcon {
-  margin-right: var(--spacing-sm);
+.Sidebar-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  background: var(--middleground);
+  border: 0;
+  border-radius: 50%;
+  outline: 0;
+  padding: 0;
+  color: var(--foreground);
+  font-size: 1.75rem;
+  transition: background-color var(--animation-timing) var(--animation-easing),
+              color var(--animation-timing) var(--animation-easing),
+              transform var(--animation-timing) var(--animation-easing);
+}
+
+.Sidebar-button:hover {
+  background-color: var(--foreground);
+  color: var(--background);
+}
+
+.Sidebar-button.is-expanded {
+  transform: rotate(90deg);
 }
 
 .Sidebar-list {
@@ -29,23 +53,19 @@
 
 .Sidebar-link {
   color: var(--accent);
+  font-size: 1.125rem;
   text-decoration: none;
   display: block;
   position: relative; /* allows absolute positioning within */
   padding: var(--spacing-md);
   background-color: var(--background);
-  transition: background-color var(--animation-timing) var(--animation-easing),
-              color var(--animation-timing) var(--animation-easing),
-              box-shadow 0.33s var(--animation-easing),
-              transform 0.33s var(--animation-easing);
+  transition: color var(--animation-timing) var(--animation-easing);
 }
 
 .Sidebar-link:hover,
 .Sidebar-link:focus,
 .Sidebar-link.is-active {
   color: #fff;
-  transform: scale(1.025);
-  box-shadow: 0 var(--spacing-md) var(--spacing-lg) rgba(0, 0, 0, 0.25);
 }
 
 .Sidebar-link.is-active {
