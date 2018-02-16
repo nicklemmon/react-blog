@@ -2,5 +2,4 @@
   padding: var(--container-padding);
   color: var(--foreground);
   background-color: var(--background);
-  border-top: 2px solid var(--accent);
 }
