@@ -26,6 +26,10 @@
   .Layout {
     grid-template-columns: 100%;
   }
+
+  .Layout-sidebar {
+    grid-row: initial;
+  }
   
   .Layout-header,
   .Layout-main,

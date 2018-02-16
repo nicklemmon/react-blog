@@ -34,9 +34,14 @@ class Sidebar extends Component {
         </NavLink>
       </li>
     );
+    let classNames = 'Sidebar Theme--tertiary';
+
+    if ( this.props.classNames ) {
+      classNames += ` ${this.props.classNames}`;
+    }
 
     return (
-      <nav className={ 'Sidebar Theme--tertiary ' + ( isExpanded ? 'is-expanded' : 'is-collapsed' ) }>
+      <nav className={ classNames + ( isExpanded ? ' is-expanded' : ' is-collapsed' ) }>
         <div className='Sidebar-header'>
           { headerContent }
 
