@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
-import MdChevronRight from 'react-icons/lib/md/chevron-right';
 import MdDateRange from 'react-icons/lib/md/date-range';
 
 import './Sidebar.css';
