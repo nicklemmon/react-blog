@@ -6,6 +6,7 @@ import Header from './Header/Header.js';
 import Sidebar from './Sidebar/Sidebar.js';
 import Content from './Content/Content.js';
 import Footer from './Footer/Footer.js';
+import Landing from './Landing/Landing.js';
 import Post from './Post/Post.js';
 
 class Layout extends Component {
@@ -18,6 +19,8 @@ class Layout extends Component {
 
         <Content classNames="Layout-main">
           { this.props.children }
+
+          <Route path='/' component={ Landing }></Route>
 
           <Route path='/posts/:postId' component={ Post }></Route>
         </Content>

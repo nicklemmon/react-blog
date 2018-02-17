@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import MdChevronRight from 'react-icons/lib/md/chevron-right';
+import MdDateRange from 'react-icons/lib/md/date-range';
 
 import './Sidebar.css';
 
@@ -31,6 +32,12 @@ class Sidebar extends Component {
           to={ '/posts/' + item.id }
         >
           { item.title }
+
+          <div className='Sidebar-date'>
+            <MdDateRange className='Sidebar-dateIcon' />
+
+            { item.date }
+          </div>
         </NavLink>
       </li>
     );
@@ -44,10 +51,6 @@ class Sidebar extends Component {
       <nav className={ classNames + ( isExpanded ? ' is-expanded' : ' is-collapsed' ) }>
         <div className='Sidebar-header'>
           { headerContent }
-
-          <button onClick={ this.toggleNav } className={ 'Sidebar-button ' + ( isExpanded ? 'is-expanded' : 'is-collapsed' ) } aria-label='toggle navigation' aria-controls='navigation' aria-expanded={ isExpanded }>
-            <MdChevronRight className='Sidebar-chevronIcon'/>
-          </button>
         </div>
 
         <ul className='Sidebar-list' id='navigation'>

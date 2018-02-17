@@ -20,6 +20,9 @@
   --border-radius: 10px;
   --animation-timing: 0.25s;
   --animation-easing: ease-in-out;
+  --layer-low: -5;
+  --layer-mid: 0;
+  --layer-high: 5;
 }
 
 /* small */
