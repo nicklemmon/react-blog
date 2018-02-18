@@ -133,3 +133,25 @@ h6 {
   font-size: 1.25rem;
   text-transform: uppercase;
 }
+
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+  opacity: 0.85;
+  margin: 0;
+}
+
+a {
+  color: var(--highlight);
+}
+
+blockquote {
+  padding: var(--spacing-sm) 0 var(--spacing-sm) var(--spacing-md);
+  border-left: var(--spacing-xs) solid var(--accent);
+  margin: 0;
+  opacity: 0.66;
+}
+
+blockquote p {
+  font-size: 1.25rem;
+}
