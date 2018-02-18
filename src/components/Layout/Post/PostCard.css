@@ -1,0 +1,51 @@
+.PostCard {
+  position: relative;
+  color: var(--foreground);
+  background-color: var(--background);
+  border: 1px solid var(--middleground);
+  box-shadow: var(--shadow-sm);
+  position: relative; /* allows absolute positioning within */
+  height: 100%;
+}
+
+.PostCard-content,
+.PostCard-footer {
+  padding: var(--container-padding);
+}
+
+.PostCard-date {
+  position: absolute;
+  top: var(--spacing-md);
+  display: inline-block;
+  font-size: 0.85rem;
+  padding: var(--spacing-xs) var(--spacing-sm);;
+  background: var(--accent);
+  border-radius: var(--border-radius);
+  font-weight: 700;
+}
+
+.PostCard-title {
+  margin-top: var(--spacing-md);
+}
+
+.PostCard-subtitle {
+  opacity: 0.66;
+  font-size: 1.75rem;
+  margin-bottom: var(--spacing-lg);
+}
+
+.PostCard-footer {
+  position: absolute;
+  bottom: 0;
+  background-color: var(--background);
+  padding-top: var(--spacing-sm);
+  padding-bottom: var(--spacing-sm);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+}
+
+.PostCard-link {
+  color: var(--highlight);
+}

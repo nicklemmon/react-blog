@@ -1,0 +1,63 @@
+.Sidebar {
+  background: var(--background);
+  color: var(--foreground);
+  overflow-x: hidden;
+}
+
+.Sidebar-header {
+  background: rgba(0, 0, 0, 0.125);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--container-padding);
+  padding-left: var(--spacing-md);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.Sidebar-list {
+  margin: 0;
+  padding: 0;
+}
+
+.Sidebar-listItem {
+  list-style: none;
+}
+
+.Sidebar-link {
+  color: var(--accent);
+  font-size: 1.25rem;
+  text-decoration: none;
+  display: block;
+  position: relative; /* allows absolute positioning within */
+  padding: var(--spacing-md);
+  background-color: var(--background);
+  transition: color var(--animation-timing) var(--animation-easing),
+              background-color var(--animation-timing) var(--animation-easing);
+}
+
+.Sidebar-link:hover,
+.Sidebar-link:focus,
+.Sidebar-link.is-active {
+  color: #fff;
+}
+
+.Sidebar-link.is-active {
+  background-color: var(--accent);
+}
+
+.Sidebar-link:focus {
+  outline-offset: -1px;
+}
+
+.Sidebar-date {
+  display: flex;
+  align-items: center;
+  font-size: 0.85rem;
+  color: var(--foreground);
+  margin-top: var(--spacing-sm);
+}
+
+.Sidebar-dateIcon {
+  margin-right: var(--spacing-xs);
+}

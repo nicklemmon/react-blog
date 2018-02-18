@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './Header.css';
 
+import { Link } from 'react-router-dom';
+
 class Header extends Component {
   render() {
     let classNames = 'Header';
@@ -12,7 +14,7 @@ class Header extends Component {
     return (
       <header className={ classNames }>
         <div className='Header-brand'>
-          Citrus Blog
+          <Link className='Header-link' to="/">Platform Title</Link>
         </div>
       </header>
     );

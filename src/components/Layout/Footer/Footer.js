@@ -10,9 +10,7 @@ class Footer extends Component {
     }
 
     return (
-      <footer className={ classNames }>
-        I'm a footer.
-      </footer>
+      <footer className={ classNames }></footer>
     );
   }
 }

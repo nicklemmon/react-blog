@@ -1,0 +1,40 @@
+.Layout {
+  --footer-header-height: 8vh;
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: auto auto auto;
+}
+
+.Layout-header {
+  grid-column: 1 / span 2;
+}
+
+.Layout-sidebar {
+  grid-row: 2 / span 3;
+}
+
+.Layout-main {
+  min-height: 100vh;
+}
+
+.Layout-footer {
+  grid-column: 2;
+}
+
+@media (max-width: 768px) {
+  .Layout {
+    grid-template-columns: 100%;
+  }
+
+  .Layout-sidebar {
+    grid-row: initial;
+  }
+  
+  .Layout-header,
+  .Layout-main,
+  .Layout-sidebar,
+  .Layout-footer {
+    grid-column: 1 / span 2;
+  }
+}

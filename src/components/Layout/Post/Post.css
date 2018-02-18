@@ -1,0 +1,20 @@
+.Post-prose {
+  max-width: var(--breakpoint-md);
+}
+
+.Post-prose * + * { /* used for longform text */
+  margin-top: var(--spacing-md);
+}
+
+.Post-prose * + h3 {
+  margin-top: var(--spacing-lg);
+}
+
+.Post-prose * + ul,
+.Post-prose * + ol {
+  margin: var(--spacing-md) 0;
+}
+
+.Post-prose * + p {
+  margin-top: var(--spacing-md);
+}
