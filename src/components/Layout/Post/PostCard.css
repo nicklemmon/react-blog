@@ -14,13 +14,18 @@
 }
 
 .PostCard-date {
+  position: absolute;
+  top: var(--spacing-md);
   display: inline-block;
   font-size: 0.85rem;
   padding: var(--spacing-xs) var(--spacing-sm);;
-  background: var(--highlight);
-  color: #fff;
+  background: var(--accent);
   border-radius: var(--border-radius);
   font-weight: 700;
+}
+
+.PostCard-title {
+  margin-top: var(--spacing-md);
 }
 
 .PostCard-subtitle {

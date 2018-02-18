@@ -9,7 +9,6 @@
   padding: var(--container-padding);
   margin-bottom: var(--spacing-lg);
   border-radius: 0 var(--border-radius) var(--border-radius) 0;
-  box-shadow: var(--shadow-lg);
   max-width: var(--breakpoint-lg);
 }
 

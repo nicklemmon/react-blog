@@ -12,12 +12,12 @@ import Post from './Post/Post.js';
 class Layout extends Component {
   render() {
     return (
-      <div className="Layout">
-        <Header classNames="Layout-header"></Header>
+      <div className='Layout'>
+        <Header classNames='Layout-header'></Header>
 
-        <Sidebar classNames="Layout-sidebar"></Sidebar>
+        <Sidebar classNames='Layout-sidebar'></Sidebar>
 
-        <Content classNames="Layout-main">
+        <Content classNames='Layout-main'>
           { this.props.children }
 
           <Route exact path='/' component={ Landing }></Route>
@@ -25,7 +25,7 @@ class Layout extends Component {
           <Route path='/posts/:postId' component={ Post }></Route>
         </Content>
 
-        <Footer classNames="Layout-footer"></Footer>
+        <Footer classNames='Layout-footer'></Footer>
       </div>
     );
   }
