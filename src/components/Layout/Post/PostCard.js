@@ -21,26 +21,30 @@ class PostCard extends Component {
 
     return (
       <div className={ classNames } role='region'>
-        <div className='PostCard-date'>{ date }</div>
+        <div className='PostCard-content'>
+          <div className='PostCard-date'>{ date }</div>
 
-        <h2 className='PostCard-title'>{ title }</h2>
+          <h2 className='PostCard-title'>{ title }</h2>
 
-        <div className='PostCard-subtitle'>{ subtitle }</div>
-
-        <div className='PostCard-author'>
-          <em>By </em>
-          
-          { author }
+          <div className='PostCard-subtitle'>{ subtitle }</div>
         </div>
 
-        <Link 
-         className='PostCard-link'
-         to={ '/posts/' + id }
-        >
-          Read post 
+        <div className='PostCard-footer Theme--secondary'>
+          <div className='PostCard-author'>
+            <em>By </em>
+            
+            { author }
+          </div>
 
-          <MdArrowForward />
-        </Link>
+          <Link 
+          className='PostCard-link'
+          to={ '/posts/' + id }
+          >
+            Read post 
+
+            <MdArrowForward />
+          </Link>
+        </div>
       </div>
     );
   }
