@@ -14,7 +14,7 @@
   --breakpoing-lg: 991px;
   --breakpoint-xl: 1199px;
   --container-padding: var(--spacing-lg) var(--spacing-md);
-  --shadow-sm: 0 var(--spacing-xs) var(--spacing-sm) -0.33rem rgba(0, 0, 0, 0.125);
+  --shadow-sm: 0 var(--spacing-sm) var(--spacing-sm) -0.25rem rgba(0, 0, 0, 0.0625);
   --shadow-lg: 0 var(--spacing-md) var(--spacing-lg) -0.33rem rgba(0, 0, 0, 0.0625);
   --gutter: 0.5rem;
   --border-radius: 10px;

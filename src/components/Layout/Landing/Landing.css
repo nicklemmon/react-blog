@@ -6,14 +6,8 @@
 }
 
 .Landing-title {
-  position: absolute;
   padding: var(--container-padding);
-  top: 0;
-  left: 0;
-  color: #fff;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.33);
-  border-bottom: 2px solid var(--highlight);
   z-index: var(--layer-high);
 }
 

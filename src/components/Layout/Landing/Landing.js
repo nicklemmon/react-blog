@@ -1,17 +1,24 @@
 import React, { Component } from 'react';
 
 import './Landing.css';
-import cityImage from './city.jpg';
+
+import PostCard from '../Post/PostCard.js';
+
+import posts from '../Post/posts.js';
 
 class Landing extends Component {
   render() {
     return (
       <div className='Landing'>
-        <div className='Landing-hero'>
-          <h1 className='Landing-title'>Welcome to Ze Blog.</h1>
+        <h1 className='Landing-title'>Welcome to Ze Blog.</h1>
 
-          <img className='Landing-heroImg' src={ cityImage } alt='' />
-        </div>
+        <PostCard
+         date='02/13/2018'
+         title='Lorem ipsum dolor sit'
+         subtitle='Consecutir compulsit'
+         author='Bill Murray'
+        >
+        </PostCard>
       </div>
     );
   }
