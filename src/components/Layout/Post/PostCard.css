@@ -1,9 +1,11 @@
 .PostCard {
+  position: relative;
   color: var(--foreground);
   background-color: var(--background);
   border: 1px solid var(--middleground);
   box-shadow: var(--shadow-sm);
   position: relative; /* allows absolute positioning within */
+  height: 100%;
 }
 
 .PostCard-content,
@@ -24,16 +26,19 @@
 .PostCard-subtitle {
   opacity: 0.66;
   font-size: 1.75rem;
-  margin-bottom: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
 }
 
 .PostCard-footer {
+  position: absolute;
+  bottom: 0;
   background-color: var(--background);
   padding-top: var(--spacing-sm);
   padding-bottom: var(--spacing-sm);
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  width: 100%;
 }
 
 .PostCard-link {
