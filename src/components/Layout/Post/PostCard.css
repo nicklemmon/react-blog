@@ -24,6 +24,7 @@
 .PostCard-subtitle {
   opacity: 0.66;
   font-size: 1.75rem;
+  margin-bottom: var(--spacing-md);
 }
 
 .PostCard-footer {
