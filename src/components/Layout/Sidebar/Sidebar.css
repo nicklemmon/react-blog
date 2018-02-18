@@ -47,7 +47,7 @@
 }
 
 .Sidebar-link:focus {
-  outline: 0;
+  outline-offset: -1px;
 }
 
 .Sidebar-date {
